@@ -3,7 +3,7 @@
 <html lang="pt">
 
 <head>
-    <title>Agenda</title>
+    <title>{% block titulo%}{% endblock %}Agenda</title>
     {% include 'parciais/head.html'%}
 </head>
 
@@ -26,7 +26,7 @@
                       id="search-input"
                       placeholder="Digite sua pesquisa"
                       name="termo">
-                {% include 'parciais/_messagens.html'%}
+                {% include 'parciais/_messages.html'%}
               </div>
             </div>
           </form>

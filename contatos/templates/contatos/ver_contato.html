@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block titulo%}{{ contato.nome }} {{ contato.sobrenome }} | {% endblock %}
+
 {%block conteudo %} 
 {% if contato.foto %}
   <p>
